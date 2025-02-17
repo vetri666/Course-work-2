@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Sale Fundraiser</title>
+    <link rel="stylesheet" href="Assignmentcss_2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Garage Sale Fundraiser</h1>
+        <p>Support our cause by purchasing items and donating to help us reach our goal!</p>
+
+        <form id="saleForm">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="creditCard">Credit Card:</label>
+                <input type="text" id="creditCard" name="creditCard" placeholder="xxxx-xxxx-xxxx-xxxx (Add hyphen)" required>
+
+                <label for="expiryMonth">Expiry Month:</label>
+                <input type="text" id="expiryMonth" name="expiryMonth" placeholder="MMM (in Capital letter)" required>
+
+                <label for="expiryYear">Expiry Year:</label>
+                <input type="text" id="expiryYear" name="expiryYear" placeholder="yyyy" required>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Items for Sale</legend>
+                <label for="item1">Books & Magazines (Price: $15):</label>
+                <input type="text" id="item1" name="item1Qty" placeholder="Quantity">
+
+                <label for="item2"> Home Decor (Price: $20):</label>
+                <input type="text" id="item2" name="item2Qty" placeholder="Quantity">
+
+                <label for="item3"> Toys & Games(kids) (Price: $25):</label>
+                <input type="text" id="item3" name="item3Qty" placeholder="Quantity">
+
+                <label for="item4"> Jewelry & Artifacts (Price: $30):</label>
+                <input type="text" id="item4" name="item4Qty" placeholder="Quantity">
+
+                <label for="item5"> Craft Supplies  (Price: $10):</label>
+                <input type="text" id="item5" name="item5Qty" placeholder="Quantity">
+            </fieldset>
+
+
+            <button type="button" onclick="generateReceipt()">Generate Receipt</button>
+        </form>
+
+
+        <div id="errorMessages"></div>
+
+
+        <div id="receiptOutput"></div>
+    </div>
+
+    <script src="Assignment_2_JS.js"></script>
+</body>
+
+</html>
