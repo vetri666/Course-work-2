@@ -1,29 +1,3 @@
-.title-area h1 {
-    font-size: 2.5rem;
-    color: #ff6600;
-    background-color: blue;
-}
-
-article h2 {
-    font-size: 3rem;
-    color: #333;
-}
-
-article p {
-    margin-top: 10px;
-    line-height: 1.8;
-}
-
-.right-aside h3 {
-    font-size: 1.5rem;
-    color: #666;
-}
-
-.right-aside ul {
-    list-style: square;
-    padding-left: 20px;
-}
-
-.right-aside ul li {
-    margin-bottom: 10px;
+p {
+    color: red
 }

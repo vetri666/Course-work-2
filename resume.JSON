@@ -1,0 +1,54 @@
+{
+    "personal_info": {
+        "name": "Vetri Velan Anandan",
+        "email": "vetri.ary@gmail.com",
+        "phone": "+1-548-384-4050",
+        "address": "Second Avenue, Kitchener, Ontario"
+    },
+    "objective": "Seeking a challenging position in database development and reporting systems.",
+    "education": [{
+        "degree": "Post Graduate Certificate",
+        "field": "Reporting Systems and Database Development",
+        "college": "Conestoga College",
+        "location": "Canada",
+        "graduation_year": 2025
+    }],
+    "work_experience": [{
+            "job_title": "Catalog Analyst",
+            "company": "Walmart",
+            "location": "India",
+            "duration": "14 months",
+            "responsibilities": [
+                "Analyzed and managed product catalogs.",
+                "Improved catalog accuracy by 15%."
+            ]
+        },
+        {
+            "job_title": "System Administrator",
+            "company": "Wipro",
+            "location": "India",
+            "duration": "8 months",
+            "responsibilities": [
+                "Maintained and configured server environments.",
+                "Troubleshot system-level issues."
+            ]
+        },
+        {
+            "job_title": "Technical Support Engineer",
+            "company": "Zoho Corp",
+            "location": "India",
+            "duration": "28 months",
+            "responsibilities": [
+                "Debugged email terminal and network issues.",
+                "Worked on anti-spam and abuse prevention with email firewalls."
+            ]
+        }
+    ],
+    "skills": ["Java", "HTML", "MongoDB", "Data Analysis", "DNS/IP", "MySQL/PLSQL"],
+    "certifications": ["Cloud Certification"],
+    "projects": [{
+        "title": "Big Data Storehouse Model using Large Language Models",
+        "description": "Developing a scalable data model for efficient storage, retrieval, and analysis of large, diverse datasets using MongoDB and Studio 3T.",
+        "technologies": ["Java", "NoSQL", "JSON"]
+    }]
+}

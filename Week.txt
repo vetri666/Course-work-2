@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+        <title>Inline CSS</title>
+</head>
+
+<body>
+
+    <p style="color:red;">This will appear in red.</p>
+
+        <p>This will not appear in red.</p>
+</body>
+
+</html>

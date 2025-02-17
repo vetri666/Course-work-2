@@ -1,0 +1,126 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5ebcf3;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/* Layout Styles */
+
+#resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #cfe2f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Section Styles */
+
+section {
+    margin-bottom: 30px;
+}
+
+section div {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+section div:last-child {
+    border-bottom: none;
+}
+
+
+/* Personal Info */
+
+#resume-container h1+p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+
+/* Skills and Certifications */
+
+ul {
+    columns: 2;
+    /* Columns for compact display */
+    column-gap: 20px;
+}
+
+
+/* Highlighting */
+
+h3,
+h2 {
+    color: #2980b9;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    ul {
+        columns: 1;
+        /* Single column on smaller screens */
+    }
+    #resume-container {
+        padding: 15px;
+    }
+}

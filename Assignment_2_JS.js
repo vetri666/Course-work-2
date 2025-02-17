@@ -20,24 +20,21 @@ function generateReceipt() {
     const item4Price = 30;
     const item5Price = 10;
 
-    //exception
+    // Error messages
     let errors = [];
 
-    // Validation of mandatory fields
+    // Validate mandatory fields
     if (!name || !email) {
         errors.push("Name and Email are required.");
     }
 
-    // Validating the credit card format (xxxx-xxxx-xxxx-xxxx)
+    // Validate credit card format (xxxx-xxxx-xxxx-xxxx)
     const creditCardRegex = /^\d{4}-\d{4}-\d{4}-\d{4}$/;
     if (!creditCardRegex.test(creditCard)) {
         errors.push("Credit Card format should be xxxx-xxxx-xxxx-xxxx.");
     }
 
-
-
-
-    // Validating the credit card expiry month (MMM format)
+    // Validate credit card expiry month (MMM format)
     const expiryMonthRegex = /^(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)$/;
     if (!expiryMonthRegex.test(expiryMonth)) {
         errors.push("Expiry Month should be in MMM format.");
@@ -63,11 +60,10 @@ function generateReceipt() {
             p.textContent = error;
             errorMessages.appendChild(p);
         });
-        return;
-        // Stop if there are errors
+        return; // Stop if there are errors
     }
 
-    // Calculating total cost
+    // Calculate total cost
     const totalCost = (item1Qty * item1Price) + (item2Qty * item2Price) + (item3Qty * item3Price) + (item4Qty * item4Price) + (item5Qty * item5Price);
 
     // Calculate donation (either $10 or 10% of total cost, whichever is higher)
@@ -75,9 +71,6 @@ function generateReceipt() {
 
     // Get last 4 digits of credit card
     const last4Digits = creditCard.slice(-4);
-
-
-
 
     // Generate receipt
     const receiptOutput = document.getElementById('receiptOutput');

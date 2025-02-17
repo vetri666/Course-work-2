@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garage Sale Fundraiser</title>
-    <link rel="stylesheet" href="Assignmentcss_2.css">
+    <link rel="stylesheet" href="Assignment_2_css">
 </head>
 
 <body>
@@ -27,10 +27,7 @@
                 <input type="text" id="creditCard" name="creditCard" placeholder="xxxx-xxxx-xxxx-xxxx" required>
 
                 <label for="expiryMonth">Expiry Month:</label>
-                <input type="text" id="expiryMonth" name="expiryMonth" placeholder="MMM (in Capital letter)" required>
-
-
-
+                <input type="text" id="expiryMonth" name="expiryMonth" placeholder="MMM" required>
 
                 <label for="expiryYear">Expiry Year:</label>
                 <input type="text" id="expiryYear" name="expiryYear" placeholder="yyyy" required>
@@ -66,7 +63,7 @@
         <div id="receiptOutput"></div>
     </div>
 
-    <script src="Assignment_2_JS.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

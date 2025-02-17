@@ -1,0 +1,121 @@
+// Validate form input and generate receipt
+function validateForm() {
+    let errors = [];
+    
+    // Get user inputs
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let creditCard = document.getElementById('creditCard').value;
+    let expiryMonth = document.getElementById('expiryMonth').value;
+    let expiryYear = document.getElementById('expiryYear').value;
+    let items = document.getElementsByClassName('item');
+    
+    // Validate name and email
+    if (name === "") {
+        errors.push("Name is required.");
+    }
+
+    if (email === "") {
+        errors.push("Email is required.");
+    }
+
+    // Validate credit card format (xxxx-xxxx-xxxx-xxxx)
+    let ccRegex = /^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$/;
+    if (!ccRegex.test(creditCard)) {
+        errors.push("Credit Card should be in the format xxxx-xxxx-xxxx-xxxx.");
+    }
+
+    // Validate expiry month (MMM)
+    let monthRegex = /^(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)$/;
+    if (!monthRegex.test(expiryMonth)) {
+        errors.push("Credit Card Expiry Month should be in the format MMM.");
+    }
+
+    // Validate expiry year (yyyy)
+    let yearRegex = /^[0-9]{4}$/;
+    if (!yearRegex.test(expiryYear)) {
+        errors.push("Credit Card Expiry Year should be in the format yyyy.");
+    }
+
+    // Validate that at least one item is bought and quantity is a number
+    let totalCost = 0;
+    let validQuantity = false;
+    for (let i = 0; i < items.length; i++) {
+        let itemQuantity = parseInt(items[i].value);
+        if (itemQuantity > 0) {
+            validQuantity = true;
+        }
+        if (isNaN(itemQuantity) || itemQuantity < 0) {
+            errors.push("Quantity for item " + (i + 1) + " must be a positive number.");
+        }
+        totalCost += itemQuantity * parseFloat(items[i].dataset.price); // Calculate total cost
+    }
+
+    if (!validQuantity) {
+        errors.push("At least one item must be bought.");
+    }
+
+    // Calculate donation (either $10 or 10% of total cost, whichever is higher)
+    let donationAmount = Math.max(10, totalCost * 0.1);
+
+    // If there are errors, display them
+    if (errors.length > 0) {
+        displayErrors(errors);
+        return false; // Prevent form submission
+    }
+
+    // Generate receipt if no errors
+    generateReceipt(name, email, creditCard, totalCost, donationAmount);
+
+    return false; // Prevent form submission as we only need client-side processing
+}
+
+// Display all error messages
+function displayErrors(errors) {
+    let errorContainer = document.getElementById('errorMessages');
+    errorContainer.innerHTML = ""; // Clear previous errors
+    for (let i = 0; i < errors.length; i++) {
+        let p = document.createElement('p');
+        p.textContent = errors[i];
+        errorContainer.appendChild(p);
+    }
+    errorContainer.style.display = 'block'; // Show the error messages
+}
+
+// Generate receipt with customer info, products, and total cost
+function generateReceipt(name, email, creditCard, totalCost, donationAmount) {
+    let receiptContainer = document.getElementById('receipt');
+    
+    // Show only the last 4 digits of the credit card
+    let maskedCC = "****-****-****-" + creditCard.slice(-4);
+
+    // Generate product details
+    let itemDetails = "";
+    let items = document.getElementsByClassName('item');
+    for (let i = 0; i < items.length; i++) {
+        let itemQuantity = parseInt(items[i].value);
+        if (itemQuantity > 0) {
+            itemDetails += `<p>Item ${i + 1}: Quantity - ${itemQuantity}, Cost - $${itemQuantity * parseFloat(items[i].dataset.price)}</p>`;
+        }
+    }
+
+    // Receipt content
+    let receiptContent = `
+        <h3>Receipt</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Credit Card:</strong> ${maskedCC}</p>
+        ${itemDetails}
+        <p><strong>Total Cost:</strong> $${totalCost.toFixed(2)}</p>
+        <p><strong>Donation Amount:</strong> $${donationAmount.toFixed(2)}</p>
+    `;
+
+    receiptContainer.innerHTML = receiptContent;
+    receiptContainer.style.display = 'block'; // Show the receipt
+}
+
+// Listen to form submit
+document.getElementById('garageSaleForm').onsubmit = function(event) {
+    event.preventDefault(); // Prevent default form submission
+    validateForm(); // Validate form and generate receipt
+};

@@ -1,0 +1,168 @@
+    {
+        "OlympicMedals": [{
+                "Year": 2024,
+                "HostCity": "Paris",
+                "Countries": [{
+                        "Country": "United States",
+                        "Gold": 39,
+                        "Silver": 41,
+                        "Bronze": 33,
+                        "Total": 113
+                    },
+                    {
+                        "Country": "China",
+                        "Gold": 29,
+                        "Silver": 17,
+                        "Bronze": 20,
+                        "Total": 66
+                    },
+                    {
+                        "Country": "Germany",
+                        "Gold": 15,
+                        "Silver": 10,
+                        "Bronze": 12,
+                        "Total": 37
+                    },
+                    {
+                        "Country": "Japan",
+                        "Gold": 14,
+                        "Silver": 5,
+                        "Bronze": 10,
+                        "Total": 29
+                    }
+                ]
+            },
+            {
+                "Year": 2020,
+                "HostCity": "Tokyo",
+                "Countries": [{
+                        "Country": "United States",
+                        "Gold": 50,
+                        "Silver": 51,
+                        "Bronze": 36,
+                        "Total": 137
+                    },
+                    {
+                        "Country": "China",
+                        "Gold": 38,
+                        "Silver": 32,
+                        "Bronze": 18,
+                        "Total": 88
+                    },
+                    {
+                        "Country": "Japan",
+                        "Gold": 27,
+                        "Silver": 14,
+                        "Bronze": 17,
+                        "Total": 58
+                    },
+                    {
+                        "Country": "Great Britain",
+                        "Gold": 22,
+                        "Silver": 21,
+                        "Bronze": 22,
+                        "Total": 65
+                    }
+                ]
+            },
+            {
+                "Year": 2016,
+                "HostCity": "Rio de Janeiro",
+                "Countries": [{
+                        "Country": "United States",
+                        "Gold": 46,
+                        "Silver": 37,
+                        "Bronze": 38,
+                        "Total": 121
+                    },
+                    {
+                        "Country": "Great Britain",
+                        "Gold": 27,
+                        "Silver": 23,
+                        "Bronze": 17,
+                        "Total": 67
+                    },
+                    {
+                        "Country": "China",
+                        "Gold": 26,
+                        "Silver": 18,
+                        "Bronze": 26,
+                        "Total": 70
+                    },
+                    {
+                        "Country": "Germany",
+                        "Gold": 17,
+                        "Silver": 10,
+                        "Bronze": 15,
+                        "Total": 42
+                    }
+                ]
+            },
+            {
+                "Year": 2012,
+                "HostCity": "London",
+                "Countries": [{
+                        "Country": "United States",
+                        "Gold": 46,
+                        "Silver": 29,
+                        "Bronze": 29,
+                        "Total": 104
+                    },
+                    {
+                        "Country": "China",
+                        "Gold": 38,
+                        "Silver": 27,
+                        "Bronze": 23,
+                        "Total": 88
+                    },
+                    {
+                        "Country": "Russia",
+                        "Gold": 24,
+                        "Silver": 26,
+                        "Bronze": 32,
+                        "Total": 82
+                    },
+                    {
+                        "Country": "Great Britain",
+                        "Gold": 29,
+                        "Silver": 17,
+                        "Bronze": 19,
+                        "Total": 65
+                    }
+                ]
+            },
+            {
+                "Year": 2008,
+                "HostCity": "Beijing",
+                "Countries": [{
+                        "Country": "China",
+                        "Gold": 0,
+                        "Silver": 0,
+                        "Bronze": 0,
+                        "Total": 0
+                    },
+                    {
+                        "Country": "United States",
+                        "Gold": 36,
+                        "Silver": 39,
+                        "Bronze": 36,
+                        "Total": 111
+                    },
+                    {
+                        "Country": "Russia",
+                        "Gold": 23,
+                        "Silver": 21,
+                        "Bronze": 28,
+                        "Total": 72
+                    },
+                    {
+                        "Country": "Great Britain",
+                        "Gold": 19,
+                        "Silver": 13,
+                        "Bronze": 15,
+                        "Total": 47
+                    }
+                ]
+            }
+        ]
+    }

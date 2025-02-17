@@ -1,0 +1,23 @@
+/* Styles for paragraphs inside the main section */
+
+main p {
+    color: red;
+}
+
+
+/* Style for the heading inside the section */
+
+section h2 {
+    color: blue;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+
+/* Default paragraph style outside of main */
+
+body>p {
+    color: black;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
