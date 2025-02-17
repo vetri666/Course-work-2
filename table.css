@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f8f8f8;
+    color: #e67214;
+    padding: 20px;
+    text-align: center;
+}
+
+.title-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: #0a19bc;
+}
+
+.nav-bar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar li {
+    position: relative;
+}
+
+.nav-bar a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-bar li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-menu li a {
+    padding: 10px 15px;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+
+.article-section {
+    flex: 2;
+}
+
+.right-aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.thumbnail-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.thumbnail {
+    width: 50px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

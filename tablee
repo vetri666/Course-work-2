@@ -1,0 +1,47 @@
+.thumbnail-container {
+    display: flex;
+    justify-content: space-around;
+    /* Space between thumbnails */
+    flex-wrap: wrap;
+    /* Wrap thumbnails to the next line if necessary */
+}
+
+.thumbnail-container img {
+    width: 100px;
+    /* Set a fixed width for each thumbnail */
+    height: 100px;
+    /* Set a fixed height for each thumbnail */
+    object-fit: cover;
+    /* Ensure the image is cropped to fill the box */
+    border-radius: 10px;
+    /* Add rounded corners */
+    transition: transform 0.3s ease;
+    /* Smooth transition effect */
+}
+
+.thumbnail-container img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the image on hover */
+}
+
+.thumbnail-container a {
+    text-decoration: none;
+    /* Remove link underline */
+    color: #333;
+    /* Text color for captions */
+    display: block;
+    /* Ensure the anchor wraps the image */
+    margin: 15px;
+    /* Add space around each thumbnail */
+    text-align: center;
+    /* Center-align the captions */
+}
+
+.thumbnail-container span {
+    font-size: 0.9rem;
+    /* Adjust caption font size */
+    display: block;
+    /* Display caption on a new line */
+    margin-top: 10px;
+    /* Add space between image and caption */
+}

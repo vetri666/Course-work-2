@@ -1,0 +1,12 @@
+.merch-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.merch-list li {
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: black;
+}

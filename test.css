@@ -1,0 +1,124 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    /* Font style */
+    background-color: #f7e2e2;
+    /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Container */
+
+.container {
+    width: 1100px;
+    /* Set the width of the container */
+    margin: 0 auto;
+    /* Center the container */
+    background-color: #f8cdcd;
+    /* White background */
+    padding: 20px;
+    /* Space around the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow for depth */
+}
+
+
+/* Header Styles */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    /* Set profile image size */
+    border-radius: 50%;
+    /* Circular image */
+    margin-bottom: 10px;
+    /* Space below image */
+}
+
+h1 {
+    font-size: 2em;
+    /* Font size for main heading */
+    margin: 10px 0;
+    /* Space above and below */
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 25%;
+    /* Sidebar width */
+    float: left;
+    background-color: #fca5a5;
+    /* Sidebar background */
+    padding: 10px;
+    margin-right: 20px;
+    /* Space to the right of sidebar */
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+
+/* Main Content */
+
+main {
+    width: 70%;
+    /* Main content width */
+    float: right;
+}
+
+.resume-details h4 {
+    margin-top: 0;
+}
+
+
+/* Footer */
+
+footer {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #715858;
+    /* Footer background */
+}
+
+
+/* List and Links */
+
+ul {
+    list-style-type: none;
+    /* Remove list bullets */
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: #007BFF;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
